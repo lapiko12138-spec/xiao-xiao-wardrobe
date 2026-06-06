@@ -97,7 +97,7 @@ export const appData: AppData = {
     likes: 386,
     following: 42,
     followers: 128,
-    avatarUrl: "/uploads/1780733985183-j60to17h66l.jpg",
+    avatarUrl: "/uploads/avatar-hello-kitty.png",
     bodyImageUrl: "/uploads/profile-person.png"
   },
   wardrobe: {
