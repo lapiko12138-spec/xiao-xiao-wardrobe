@@ -21,6 +21,7 @@ import {
   UserRound
 } from "lucide-react";
 import { AvatarPlaceholder, ImagePlaceholder } from "@/components/placeholders";
+import { assetPath } from "@/lib/paths";
 import type {
   AppData,
   AppScreen,
@@ -1201,7 +1202,7 @@ function WebAi({
                   >
                     {piece.imageUrl || item.imageUrl ? (
                       <img
-                        src={piece.imageUrl || item.imageUrl}
+                        src={assetPath(piece.imageUrl || item.imageUrl)}
                         alt={item.name}
                         draggable={false}
                         className="h-full w-full object-contain"

@@ -1,3 +1,5 @@
+import { assetPath } from "@/lib/paths";
+
 type PlaceholderProps = {
   label?: string;
   className?: string;
@@ -34,7 +36,7 @@ export function ImagePlaceholder({
     >
       {imageUrl ? (
         <img
-          src={imageUrl}
+          src={assetPath(imageUrl)}
           alt={label || "图片"}
           className={[
             "absolute inset-0 h-full w-full",
@@ -76,7 +78,7 @@ export function AvatarPlaceholder({
       aria-label="头像占位图"
     >
       {imageUrl ? (
-        <img src={imageUrl} alt="头像" className="absolute inset-0 h-full w-full object-cover" />
+        <img src={assetPath(imageUrl)} alt="头像" className="absolute inset-0 h-full w-full object-cover" />
       ) : (
         <>
           <div className="absolute left-1/2 top-[18%] h-[28%] w-[28%] -translate-x-1/2 rounded-full bg-[#f9eee6]" />
