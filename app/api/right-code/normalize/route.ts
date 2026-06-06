@@ -1,8 +1,8 @@
 import { promises as fs } from "fs";
 import path from "path";
 import { NextResponse } from "next/server";
+import { saveUploadedFile } from "@/lib/storage";
 
-const uploadDir = path.join(process.cwd(), "public", "uploads");
 const defaultBaseUrl = "https://www.right.codes/draw";
 
 function contentTypeFromPath(filePath: string) {
@@ -45,23 +45,17 @@ async function saveGeneratedImage(firstImage: any) {
   const base64 = firstImage?.b64_json || firstImage?.image_base64 || firstImage?.imageBase64;
 
   if (base64) {
-    await fs.mkdir(uploadDir, { recursive: true });
     const cleanBase64 = String(base64).replace(/^data:image\/\w+;base64,/, "");
     const filename = `right-code-normalized-${Date.now()}.png`;
-    const filepath = path.join(uploadDir, filename);
-    await fs.writeFile(filepath, Buffer.from(cleanBase64, "base64"));
-    return `/uploads/${filename}`;
+    return saveUploadedFile(filename, Buffer.from(cleanBase64, "base64"), "image/png");
   }
 
   if (firstImage?.url) {
     const response = await fetch(firstImage.url);
     const contentType = response.headers.get("content-type") || "image/png";
     const buffer = Buffer.from(await response.arrayBuffer());
-    await fs.mkdir(uploadDir, { recursive: true });
     const filename = `right-code-normalized-${Date.now()}.${extensionFromContentType(contentType)}`;
-    const filepath = path.join(uploadDir, filename);
-    await fs.writeFile(filepath, buffer);
-    return `/uploads/${filename}`;
+    return saveUploadedFile(filename, buffer, contentType);
   }
 
   return null;

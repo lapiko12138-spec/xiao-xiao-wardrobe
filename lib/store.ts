@@ -1,5 +1,4 @@
-import { promises as fs } from "fs";
-import path from "path";
+import { readStoreFile, saveUploadedFile, writeStoreFile } from "@/lib/storage";
 import {
   appData,
   generateOutfit,
@@ -29,8 +28,6 @@ type StoredState = {
   outfitHistory: OutfitRecommendation[];
 };
 
-const storePath = path.join(process.cwd(), "data", "app-store.json");
-const uploadDir = path.join(process.cwd(), "public", "uploads");
 let writeQueue = Promise.resolve();
 
 const initialStore: StoredState = {
@@ -41,18 +38,16 @@ const initialStore: StoredState = {
 };
 
 async function ensureStore() {
-  await fs.mkdir(path.dirname(storePath), { recursive: true });
+  const existing = await readStoreFile();
 
-  try {
-    await fs.access(storePath);
-  } catch {
-    await fs.writeFile(storePath, JSON.stringify(initialStore, null, 2), "utf8");
+  if (!existing) {
+    await writeStoreFile(JSON.stringify(initialStore, null, 2));
   }
 }
 
 export async function readStore(): Promise<StoredState> {
   await ensureStore();
-  const raw = await fs.readFile(storePath, "utf8");
+  const raw = (await readStoreFile()) || "";
   let parsed: Partial<StoredState>;
 
   try {
@@ -80,10 +75,7 @@ export async function readStore(): Promise<StoredState> {
 
 async function writeStore(nextStore: StoredState) {
   writeQueue = writeQueue.then(async () => {
-    await fs.mkdir(path.dirname(storePath), { recursive: true });
-    const tempPath = `${storePath}.${process.pid}.${Date.now()}.tmp`;
-    await fs.writeFile(tempPath, JSON.stringify(nextStore, null, 2), "utf8");
-    await fs.rename(tempPath, storePath);
+    await writeStoreFile(JSON.stringify(nextStore, null, 2));
   });
 
   return writeQueue;
@@ -240,9 +232,7 @@ export async function saveOutfitRecommendation(input: OutfitRecommendation) {
 }
 
 async function createOutfitImage(input: OutfitRecommendation) {
-  await fs.mkdir(uploadDir, { recursive: true });
   const filename = `${input.id || `outfit-${Date.now()}`}.svg`;
-  const filepath = path.join(uploadDir, filename);
   const tones: Record<PlaceholderTone, string> = {
     cream: "#ede4d2",
     green: "#cddbb6",
@@ -273,8 +263,7 @@ async function createOutfitImage(input: OutfitRecommendation) {
   <text x="210" y="510" text-anchor="middle" font-size="14" fill="#72766d">${input.promptTags.slice(0, 4).join(" · ")}</text>
 </svg>`;
 
-  await fs.writeFile(filepath, svg, "utf8");
-  return `/uploads/${filename}`;
+  return saveUploadedFile(filename, svg, "image/svg+xml");
 }
 
 export function buildLocalOutfit(tags: string[], data: AppData): OutfitRecommendation {

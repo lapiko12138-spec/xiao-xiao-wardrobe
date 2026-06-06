@@ -1,8 +1,5 @@
-import { promises as fs } from "fs";
-import path from "path";
 import { NextResponse } from "next/server";
-
-const uploadDir = path.join(process.cwd(), "public", "uploads");
+import { saveUploadedFile } from "@/lib/storage";
 
 function extensionFromType(type: string) {
   if (type === "image/png") return "png";
@@ -22,15 +19,12 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "只支持图片上传" }, { status: 400 });
   }
 
-  await fs.mkdir(uploadDir, { recursive: true });
   const buffer = Buffer.from(await file.arrayBuffer());
   const filename = `${Date.now()}-${Math.random().toString(36).slice(2)}.${extensionFromType(file.type)}`;
-  const filepath = path.join(uploadDir, filename);
-
-  await fs.writeFile(filepath, buffer);
+  const url = await saveUploadedFile(filename, buffer, file.type);
 
   return NextResponse.json({
-    url: `/uploads/${filename}`,
+    url,
     name: file.name,
     size: file.size
   });

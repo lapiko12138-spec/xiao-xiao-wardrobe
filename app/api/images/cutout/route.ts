@@ -1,8 +1,7 @@
 import { promises as fs } from "fs";
 import path from "path";
 import { NextResponse } from "next/server";
-
-const uploadDir = path.join(process.cwd(), "public", "uploads");
+import { saveUploadedFile } from "@/lib/storage";
 
 function publicImagePath(imageUrl: string) {
   if (!imageUrl.startsWith("/uploads/")) {
@@ -97,15 +96,13 @@ export async function POST(request: Request) {
   const outputUrl = pickImageUrl(result);
 
   if (outputBase64) {
-    await fs.mkdir(uploadDir, { recursive: true });
     const cleanBase64 = outputBase64.replace(/^data:image\/\w+;base64,/, "");
     const contentType = outputBase64.match(/^data:(image\/[^;]+);base64,/)?.[1] || "image/png";
     const filename = `cutout-${Date.now()}.${extensionFromContentType(contentType)}`;
-    const filepath = path.join(uploadDir, filename);
-    await fs.writeFile(filepath, Buffer.from(cleanBase64, "base64"));
+    const savedImageUrl = await saveUploadedFile(filename, Buffer.from(cleanBase64, "base64"), contentType);
 
     return NextResponse.json({
-      imageUrl: `/uploads/${filename}`,
+      imageUrl: savedImageUrl,
       processed: true
     });
   }
