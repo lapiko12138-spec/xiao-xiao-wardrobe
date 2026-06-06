@@ -647,7 +647,7 @@ function WebAi({
       nextImage.crossOrigin = "anonymous";
       nextImage.onload = () => resolve(nextImage);
       nextImage.onerror = reject;
-      nextImage.src = imageUrl;
+      nextImage.src = assetPath(imageUrl) ?? imageUrl;
     });
     const canvas = document.createElement("canvas");
     const width = image.naturalWidth || image.width;
@@ -760,9 +760,11 @@ function WebAi({
     }
 
     const upload = await uploadImage(new File([localCutout], `${item.id}-cutout.png`, { type: "image/png" })).catch(() => null);
-    const cutoutImageUrl = upload?.url || sourceImageUrl;
+    const cutoutImageUrl = upload?.url || URL.createObjectURL(localCutout);
     updateMountedPiece(slot, { imageUrl: cutoutImageUrl, processing: false });
-    await saveCutoutToWardrobe(item, cutoutImageUrl);
+    if (upload?.url) {
+      await saveCutoutToWardrobe(item, upload.url);
+    }
     setNotice(`${item.name} 已生成抠图并保存到衣橱数据库`);
   }
 
