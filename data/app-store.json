@@ -1,0 +1,915 @@
+{
+  "profile": {
+    "name": "momo",
+    "subtitle": "记录生活 · 发现美好 · 穿出自我",
+    "days": 128,
+    "avatarTone": "green",
+    "likes": 386,
+    "following": 42,
+    "followers": 128,
+    "avatarUrl": "/uploads/1780772300475-hr9x3c6d9x.png",
+    "bodyImageUrl": "/uploads/1780772300475-hr9x3c6d9x.png"
+  },
+  "wardrobeItems": [
+    {
+      "category": "上衣",
+      "name": "黑色方格连衣裙",
+      "color": "黑色",
+      "season": "夏",
+      "scene": "玩",
+      "material": "未填写",
+      "detail": "这是一件新加入小小衣橱的单品。",
+      "tone": "dark",
+      "imageUrl": "/uploads/1780772163864-6pvsj2fhuin.png",
+      "id": "item-1780772202138",
+      "addedAt": "2026-06-06",
+      "cutoutImageUrl": "/uploads/1780772363421-8oxvktbcg9p.png"
+    },
+    {
+      "id": "top-cream-shirt",
+      "category": "上衣",
+      "name": "奶油色衬衫",
+      "color": "奶油白",
+      "season": "春 / 夏",
+      "scene": "约会、通勤",
+      "material": "棉麻混纺",
+      "detail": "柔软垂顺的基础衬衫，适合搭配半身裙或浅色长裤。",
+      "tone": "cream",
+      "brand": "日常基础款",
+      "imageUrl": "/uploads/wardrobe-cream-shirt.jpg",
+      "addedAt": "2026-06-06",
+      "cutoutImageUrl": "/uploads/1780766591408-p47zorh32f.png"
+    },
+    {
+      "id": "top-green-cardigan",
+      "category": "上衣",
+      "name": "浅绿针织开衫",
+      "color": "浅绿色",
+      "season": "春 / 秋",
+      "scene": "日常、出游",
+      "material": "细针织",
+      "detail": "轻薄开衫，能和碎花裙、白色打底衫形成温柔层次。",
+      "tone": "green",
+      "brand": "春日针织",
+      "imageUrl": "/uploads/wardrobe-green-cardigan.jpg",
+      "addedAt": "2026-06-05",
+      "cutoutImageUrl": "/uploads/1780764664199-u5fopwl93hg.png"
+    },
+    {
+      "id": "top-white-tee",
+      "category": "上衣",
+      "name": "白色短袖T恤",
+      "color": "白色",
+      "season": "夏",
+      "scene": "休闲、运动",
+      "material": "纯棉",
+      "detail": "干净百搭的短袖，适合叠穿或单穿。",
+      "tone": "cream",
+      "brand": "基础衣橱",
+      "imageUrl": "/uploads/wardrobe-white-tee.jpg",
+      "addedAt": "2026-06-04",
+      "cutoutImageUrl": "/uploads/1780765692835-qvm1cyqs1ej.png"
+    },
+    {
+      "id": "bottom-jeans",
+      "category": "下装",
+      "name": "浅蓝直筒牛仔裤",
+      "color": "浅蓝",
+      "season": "四季",
+      "scene": "日常、通勤",
+      "material": "牛仔布",
+      "detail": "版型利落，能平衡甜美上衣的柔软感。",
+      "tone": "blue",
+      "brand": "牛仔系列",
+      "imageUrl": "/uploads/wardrobe-light-blue-jeans.jpg",
+      "addedAt": "2026-06-03",
+      "cutoutImageUrl": "/uploads/1780764770853-uzctaqp6vg.png"
+    },
+    {
+      "id": "bottom-cream-pants",
+      "category": "下装",
+      "name": "米白阔腿裤",
+      "color": "米白",
+      "season": "春 / 夏",
+      "scene": "通勤、约会",
+      "material": "垂感西装料",
+      "detail": "高腰阔腿设计，适合搭配衬衫和开衫。",
+      "tone": "cream",
+      "brand": "通勤精选",
+      "imageUrl": "/uploads/wardrobe-cream-wide-pants.jpg",
+      "addedAt": "2026-06-02"
+    },
+    {
+      "id": "dress-floral",
+      "category": "连衣裙",
+      "name": "碎花半身裙",
+      "color": "浅绿碎花",
+      "season": "春 / 夏",
+      "scene": "约会、出游",
+      "material": "雪纺",
+      "detail": "轻盈碎花元素，和奶油色上衣搭配很接近设计稿风格。",
+      "tone": "green",
+      "brand": "温柔风",
+      "imageUrl": "/uploads/wardrobe-floral-skirt.png",
+      "addedAt": "2026-06-01",
+      "cutoutImageUrl": "/uploads/1780765428749-g1qnxyihne.png"
+    },
+    {
+      "id": "coat-trench",
+      "category": "外套",
+      "name": "米色风衣",
+      "color": "米色",
+      "season": "春 / 秋",
+      "scene": "通勤、旅行",
+      "material": "棉质斜纹",
+      "detail": "经典通勤外套，适合浅色内搭。",
+      "tone": "tan",
+      "brand": "外套系列",
+      "imageUrl": "/uploads/wardrobe-beige-trench.png",
+      "addedAt": "2026-05-31"
+    },
+    {
+      "id": "shoe-white",
+      "category": "鞋子",
+      "name": "小白鞋",
+      "color": "白色",
+      "season": "四季",
+      "scene": "日常、出游",
+      "material": "皮革",
+      "detail": "干净舒适，适合大多数浅色穿搭。",
+      "tone": "gray",
+      "brand": "鞋履",
+      "imageUrl": "/uploads/wardrobe-white-sneakers.jpg",
+      "addedAt": "2026-05-30",
+      "cutoutImageUrl": "/uploads/1780766634712-xll4bablrx.png"
+    },
+    {
+      "id": "bag-shoulder",
+      "category": "包包",
+      "name": "米色单肩包",
+      "color": "米色",
+      "season": "四季",
+      "scene": "约会、通勤",
+      "material": "PU皮",
+      "detail": "小巧轻便，适合温柔风和通勤风。",
+      "tone": "tan",
+      "brand": "包袋",
+      "imageUrl": "/uploads/wardrobe-beige-shoulder-bag.png",
+      "addedAt": "2026-05-29"
+    },
+    {
+      "id": "accessory-pearl",
+      "category": "配饰",
+      "name": "珍珠耳环",
+      "color": "珍珠白",
+      "season": "四季",
+      "scene": "约会、聚会",
+      "material": "仿珍珠",
+      "detail": "增加精致感的小配饰，适合浅色系搭配。",
+      "tone": "cream",
+      "brand": "配饰",
+      "imageUrl": "/uploads/wardrobe-pearl-earrings.png",
+      "addedAt": "2026-05-28",
+      "cutoutImageUrl": "/uploads/1780766636523-2703usi1301.png"
+    },
+    {
+      "id": "sport-set",
+      "category": "运动",
+      "name": "灰绿运动套装",
+      "color": "灰绿色",
+      "season": "春 / 夏",
+      "scene": "运动、居家",
+      "material": "速干面料",
+      "detail": "舒适轻便，适合轻运动和周末出门。",
+      "tone": "gray",
+      "brand": "运动系列",
+      "imageUrl": "/uploads/wardrobe-gray-green-sport-set.png",
+      "addedAt": "2026-05-27"
+    }
+  ],
+  "posts": [
+    {
+      "id": "post-1780772327359",
+      "author": "momo",
+      "title": "我的试穿搭配",
+      "desc": "基于个人形象和衣橱资源库生成的试穿搭配。",
+      "likes": 0,
+      "comments": 0,
+      "tone": "cream",
+      "imageUrl": "/uploads/profile-person.png",
+      "source": "ai",
+      "isMine": true,
+      "createdAt": "2026-06-06T18:58:47.359Z"
+    },
+    {
+      "id": "post-1780724427324",
+      "author": "小美",
+      "title": "为你生成的穿搭",
+      "desc": "温柔清新的春日约会穿搭，浅色系搭配碎花元素，给人一种轻盈舒适的感觉 🌸",
+      "likes": 0,
+      "comments": 0,
+      "tone": "cream",
+      "imageUrl": "/uploads/outfit-ai-generated.png",
+      "source": "ai",
+      "isMine": true,
+      "createdAt": "2026-06-06T05:40:27.324Z"
+    },
+    {
+      "id": "post-1780724288748",
+      "author": "小美",
+      "title": "为你生成的穿搭",
+      "desc": "温柔清新的春日约会穿搭，浅色系搭配碎花元素，给人一种轻盈舒适的感觉 🌸",
+      "likes": 0,
+      "comments": 0,
+      "tone": "cream",
+      "imageUrl": "/uploads/outfit-ai-generated.png",
+      "source": "ai",
+      "isMine": true,
+      "createdAt": "2026-06-06T05:38:08.748Z"
+    },
+    {
+      "id": "post-1",
+      "author": "甜橙不甜",
+      "title": "春日碎花裙穿搭 🌿",
+      "desc": "温柔治愈的颜色太爱了！",
+      "likes": 142,
+      "comments": 14,
+      "tone": "green",
+      "imageUrl": "/uploads/post-spring-floral.png",
+      "source": "seed"
+    },
+    {
+      "id": "post-2",
+      "author": "奶油小方",
+      "title": "通勤日常穿搭分享",
+      "desc": "简约舒适又气质~",
+      "likes": 96,
+      "comments": 8,
+      "tone": "blue",
+      "imageUrl": "/uploads/outfit-ai-generated.png",
+      "source": "seed"
+    },
+    {
+      "id": "post-3",
+      "author": "小鹿酱",
+      "title": "休闲出游穿搭｜轻松又自在",
+      "desc": "",
+      "likes": 74,
+      "comments": 6,
+      "tone": "tan",
+      "imageUrl": "/uploads/post-casual-outing.png",
+      "source": "seed"
+    },
+    {
+      "id": "post-4",
+      "author": "花花哔",
+      "title": "All Black 也可以很温柔 ❤",
+      "desc": "",
+      "likes": 97,
+      "comments": 9,
+      "tone": "dark",
+      "imageUrl": "/uploads/post-all-black.png",
+      "source": "seed"
+    }
+  ],
+  "outfitHistory": [
+    {
+      "title": "为你生成的穿搭",
+      "promptTags": [
+        "黑色方格连衣裙",
+        "上衣",
+        "玩"
+      ],
+      "pieces": [
+        {
+          "name": "奶油色衬衫",
+          "tone": "cream"
+        },
+        {
+          "name": "碎花半身裙",
+          "tone": "green"
+        },
+        {
+          "name": "米色单肩包",
+          "tone": "tan"
+        },
+        {
+          "name": "小白鞋",
+          "tone": "gray"
+        },
+        {
+          "name": "珍珠耳环",
+          "tone": "cream"
+        }
+      ],
+      "inspiration": "温柔清新的春日约会穿搭，浅色系搭配碎花元素，给人一种轻盈舒适的感觉 🌸",
+      "previewTone": "cream",
+      "likedTones": [
+        "dark",
+        "cream",
+        "green",
+        "cream",
+        "blue"
+      ],
+      "imageUrl": "/uploads/outfit-ai-generated.png",
+      "id": "outfit-1780772386094",
+      "createdAt": "2026-06-06T18:59:46.094Z"
+    },
+    {
+      "title": "为你生成的穿搭",
+      "promptTags": [
+        "礼服",
+        "连衣裙",
+        "晚宴"
+      ],
+      "pieces": [
+        {
+          "name": "奶油色衬衫",
+          "tone": "cream"
+        },
+        {
+          "name": "碎花半身裙",
+          "tone": "green"
+        },
+        {
+          "name": "米色单肩包",
+          "tone": "tan"
+        },
+        {
+          "name": "小白鞋",
+          "tone": "gray"
+        },
+        {
+          "name": "珍珠耳环",
+          "tone": "cream"
+        }
+      ],
+      "inspiration": "温柔清新的春日约会穿搭，浅色系搭配碎花元素，给人一种轻盈舒适的感觉 🌸",
+      "previewTone": "cream",
+      "likedTones": [
+        "cream",
+        "cream",
+        "green",
+        "cream",
+        "blue"
+      ],
+      "imageUrl": "/uploads/outfit-ai-generated.png",
+      "id": "outfit-1780769681025",
+      "createdAt": "2026-06-06T18:14:41.025Z"
+    },
+    {
+      "title": "为你生成的穿搭",
+      "promptTags": [
+        "周末",
+        "约会",
+        "温柔",
+        "清新"
+      ],
+      "pieces": [
+        {
+          "name": "奶油色衬衫",
+          "tone": "cream"
+        },
+        {
+          "name": "浅蓝直筒牛仔裤",
+          "tone": "blue"
+        },
+        {
+          "name": "米色单肩包",
+          "tone": "tan"
+        },
+        {
+          "name": "小白鞋",
+          "tone": "gray"
+        },
+        {
+          "name": "珍珠耳环",
+          "tone": "cream"
+        }
+      ],
+      "inspiration": "温柔清新的春日约会穿搭，浅色系搭配碎花元素，给人一种轻盈舒适的感觉 🌸",
+      "previewTone": "cream",
+      "likedTones": [
+        "cream",
+        "green",
+        "cream",
+        "blue",
+        "cream"
+      ],
+      "imageUrl": "/uploads/outfit-ai-generated.png",
+      "id": "outfit-1780769279236",
+      "createdAt": "2026-06-06T18:07:59.236Z"
+    },
+    {
+      "title": "为你生成的穿搭",
+      "promptTags": [
+        "奶油色",
+        "通勤",
+        "温柔",
+        "法式",
+        "包包"
+      ],
+      "pieces": [
+        {
+          "name": "奶油色衬衫",
+          "tone": "cream"
+        },
+        {
+          "name": "浅蓝直筒牛仔裤",
+          "tone": "blue"
+        },
+        {
+          "name": "米色单肩包",
+          "tone": "tan"
+        },
+        {
+          "name": "小白鞋",
+          "tone": "gray"
+        },
+        {
+          "name": "珍珠耳环",
+          "tone": "cream"
+        }
+      ],
+      "inspiration": "干净的蓝白色调适合通勤场景，米色下装让整体更柔和，利落但不生硬。",
+      "previewTone": "cream",
+      "likedTones": [
+        "cream",
+        "green",
+        "cream",
+        "blue",
+        "cream"
+      ],
+      "id": "outfit-1780763641682",
+      "createdAt": "2026-06-06T16:34:01.682Z",
+      "imageUrl": "/uploads/outfit-1780763641682.svg"
+    },
+    {
+      "title": "为你生成的穿搭",
+      "promptTags": [
+        "奶油色",
+        "通勤",
+        "温柔",
+        "法式",
+        "包包"
+      ],
+      "pieces": [
+        {
+          "name": "奶油色衬衫",
+          "tone": "cream"
+        },
+        {
+          "name": "浅蓝直筒牛仔裤",
+          "tone": "blue"
+        },
+        {
+          "name": "米色单肩包",
+          "tone": "tan"
+        },
+        {
+          "name": "小白鞋",
+          "tone": "gray"
+        },
+        {
+          "name": "珍珠耳环",
+          "tone": "cream"
+        }
+      ],
+      "inspiration": "干净的蓝白色调适合通勤场景，米色下装让整体更柔和，利落但不生硬。",
+      "previewTone": "cream",
+      "likedTones": [
+        "cream",
+        "green",
+        "cream",
+        "blue",
+        "cream"
+      ],
+      "id": "outfit-1780752259183",
+      "createdAt": "2026-06-06T13:24:19.183Z",
+      "imageUrl": "/uploads/outfit-1780752259183.svg"
+    },
+    {
+      "title": "为你生成的穿搭",
+      "promptTags": [
+        "奶油色衬衫",
+        "上衣",
+        "约会、通勤"
+      ],
+      "pieces": [
+        {
+          "name": "奶油色衬衫",
+          "tone": "cream"
+        },
+        {
+          "name": "浅蓝直筒牛仔裤",
+          "tone": "blue"
+        },
+        {
+          "name": "米色单肩包",
+          "tone": "tan"
+        },
+        {
+          "name": "小白鞋",
+          "tone": "gray"
+        },
+        {
+          "name": "珍珠耳环",
+          "tone": "cream"
+        }
+      ],
+      "inspiration": "干净的蓝白色调适合通勤场景，米色下装让整体更柔和，利落但不生硬。",
+      "previewTone": "cream",
+      "likedTones": [
+        "cream",
+        "green",
+        "cream",
+        "blue",
+        "cream"
+      ],
+      "id": "outfit-1780749252560",
+      "createdAt": "2026-06-06T12:34:12.560Z",
+      "imageUrl": "/uploads/outfit-1780749252560.svg"
+    },
+    {
+      "title": "为你生成的穿搭",
+      "promptTags": [
+        "通勤",
+        "25度",
+        "蓝白",
+        "简约气质"
+      ],
+      "pieces": [
+        {
+          "name": "奶油色衬衫",
+          "tone": "cream"
+        },
+        {
+          "name": "浅蓝直筒牛仔裤",
+          "tone": "blue"
+        },
+        {
+          "name": "米色单肩包",
+          "tone": "tan"
+        },
+        {
+          "name": "小白鞋",
+          "tone": "gray"
+        },
+        {
+          "name": "珍珠耳环",
+          "tone": "cream"
+        }
+      ],
+      "inspiration": "干净的蓝白色调适合通勤场景，米色下装让整体更柔和，利落但不生硬。",
+      "previewTone": "cream",
+      "likedTones": [
+        "cream",
+        "green",
+        "cream",
+        "blue",
+        "cream"
+      ],
+      "id": "outfit-1780749217410",
+      "createdAt": "2026-06-06T12:33:37.410Z",
+      "imageUrl": "/uploads/outfit-1780749217410.svg"
+    },
+    {
+      "title": "为你生成的穿搭",
+      "promptTags": [
+        "通勤",
+        "25度",
+        "蓝白",
+        "简约气质"
+      ],
+      "pieces": [
+        {
+          "name": "奶油色衬衫",
+          "tone": "cream"
+        },
+        {
+          "name": "浅蓝直筒牛仔裤",
+          "tone": "blue"
+        },
+        {
+          "name": "米色单肩包",
+          "tone": "tan"
+        },
+        {
+          "name": "小白鞋",
+          "tone": "gray"
+        },
+        {
+          "name": "珍珠耳环",
+          "tone": "cream"
+        }
+      ],
+      "inspiration": "干净的蓝白色调适合通勤场景，米色下装让整体更柔和，利落但不生硬。",
+      "previewTone": "cream",
+      "likedTones": [
+        "cream",
+        "green",
+        "cream",
+        "blue",
+        "cream"
+      ],
+      "id": "outfit-1780739577318",
+      "createdAt": "2026-06-06T09:52:57.318Z",
+      "imageUrl": "/uploads/outfit-ai-generated.png"
+    },
+    {
+      "title": "为你生成的穿搭",
+      "promptTags": [
+        "奶油色衬衫",
+        "上衣",
+        "约会、通勤"
+      ],
+      "pieces": [
+        {
+          "name": "奶油色衬衫",
+          "tone": "cream"
+        },
+        {
+          "name": "浅蓝直筒牛仔裤",
+          "tone": "blue"
+        },
+        {
+          "name": "米色单肩包",
+          "tone": "tan"
+        },
+        {
+          "name": "小白鞋",
+          "tone": "gray"
+        },
+        {
+          "name": "珍珠耳环",
+          "tone": "cream"
+        }
+      ],
+      "inspiration": "干净的蓝白色调适合通勤场景，米色下装让整体更柔和，利落但不生硬。",
+      "previewTone": "cream",
+      "likedTones": [
+        "cream",
+        "green",
+        "cream",
+        "blue",
+        "cream"
+      ],
+      "id": "outfit-1780739481738",
+      "createdAt": "2026-06-06T09:51:21.738Z",
+      "imageUrl": "/uploads/outfit-1780739481738.svg"
+    },
+    {
+      "title": "为你生成的穿搭",
+      "promptTags": [
+        "通勤",
+        "25度",
+        "蓝白",
+        "简约气质"
+      ],
+      "pieces": [
+        {
+          "name": "奶油色衬衫",
+          "tone": "cream"
+        },
+        {
+          "name": "浅蓝直筒牛仔裤",
+          "tone": "blue"
+        },
+        {
+          "name": "米色单肩包",
+          "tone": "tan"
+        },
+        {
+          "name": "小白鞋",
+          "tone": "gray"
+        },
+        {
+          "name": "珍珠耳环",
+          "tone": "cream"
+        }
+      ],
+      "inspiration": "干净的蓝白色调适合通勤场景，米色下装让整体更柔和，利落但不生硬。",
+      "previewTone": "cream",
+      "likedTones": [
+        "cream",
+        "green",
+        "cream",
+        "blue",
+        "cream"
+      ],
+      "id": "outfit-1780734477297",
+      "createdAt": "2026-06-06T08:27:57.297Z",
+      "imageUrl": "/uploads/outfit-1780734477297.svg"
+    },
+    {
+      "title": "为你生成的穿搭",
+      "promptTags": [
+        "周末约会",
+        "25°C",
+        "温柔清新风"
+      ],
+      "pieces": [
+        {
+          "name": "奶油色衬衫",
+          "tone": "cream"
+        },
+        {
+          "name": "浅蓝直筒牛仔裤",
+          "tone": "blue"
+        },
+        {
+          "name": "米色单肩包",
+          "tone": "tan"
+        },
+        {
+          "name": "小白鞋",
+          "tone": "gray"
+        },
+        {
+          "name": "珍珠耳环",
+          "tone": "cream"
+        }
+      ],
+      "inspiration": "温柔清新的春日约会穿搭，浅色系搭配碎花元素，给人一种轻盈舒适的感觉 🌸",
+      "previewTone": "cream",
+      "likedTones": [
+        "cream",
+        "green",
+        "cream",
+        "blue",
+        "cream"
+      ],
+      "id": "outfit-1780724716115",
+      "createdAt": "2026-06-06T05:45:16.115Z",
+      "imageUrl": "/uploads/outfit-1780724716115.svg"
+    },
+    {
+      "title": "为你生成的穿搭",
+      "promptTags": [
+        "周末约会",
+        "25°C",
+        "温柔清新风"
+      ],
+      "pieces": [
+        {
+          "name": "奶油色衬衫",
+          "tone": "cream"
+        },
+        {
+          "name": "浅蓝直筒牛仔裤",
+          "tone": "blue"
+        },
+        {
+          "name": "米色单肩包",
+          "tone": "tan"
+        },
+        {
+          "name": "小白鞋",
+          "tone": "gray"
+        },
+        {
+          "name": "珍珠耳环",
+          "tone": "cream"
+        }
+      ],
+      "inspiration": "温柔清新的春日约会穿搭，浅色系搭配碎花元素，给人一种轻盈舒适的感觉 🌸",
+      "previewTone": "cream",
+      "likedTones": [
+        "cream",
+        "green",
+        "cream",
+        "blue",
+        "cream"
+      ],
+      "id": "outfit-1780724712649",
+      "createdAt": "2026-06-06T05:45:12.649Z",
+      "imageUrl": "/uploads/outfit-1780724712649.svg"
+    },
+    {
+      "title": "为你生成的穿搭",
+      "promptTags": [
+        "周末约会",
+        "25°C",
+        "温柔清新风"
+      ],
+      "pieces": [
+        {
+          "name": "奶油色衬衫",
+          "tone": "cream"
+        },
+        {
+          "name": "浅蓝直筒牛仔裤",
+          "tone": "blue"
+        },
+        {
+          "name": "米色单肩包",
+          "tone": "tan"
+        },
+        {
+          "name": "小白鞋",
+          "tone": "gray"
+        },
+        {
+          "name": "珍珠耳环",
+          "tone": "cream"
+        }
+      ],
+      "inspiration": "温柔清新的春日约会穿搭，浅色系搭配碎花元素，给人一种轻盈舒适的感觉 🌸",
+      "previewTone": "cream",
+      "likedTones": [
+        "cream",
+        "green",
+        "cream",
+        "blue",
+        "cream"
+      ],
+      "id": "outfit-1780724709487",
+      "createdAt": "2026-06-06T05:45:09.487Z",
+      "imageUrl": "/uploads/outfit-1780724709487.svg"
+    },
+    {
+      "title": "为你生成的穿搭",
+      "promptTags": [
+        "周末约会",
+        "25°C",
+        "温柔清新风"
+      ],
+      "pieces": [
+        {
+          "name": "奶油色衬衫",
+          "tone": "cream"
+        },
+        {
+          "name": "浅蓝直筒牛仔裤",
+          "tone": "blue"
+        },
+        {
+          "name": "米色单肩包",
+          "tone": "tan"
+        },
+        {
+          "name": "小白鞋",
+          "tone": "gray"
+        },
+        {
+          "name": "珍珠耳环",
+          "tone": "cream"
+        }
+      ],
+      "inspiration": "温柔清新的春日约会穿搭，浅色系搭配碎花元素，给人一种轻盈舒适的感觉 🌸",
+      "previewTone": "cream",
+      "likedTones": [
+        "cream",
+        "green",
+        "cream",
+        "blue",
+        "cream"
+      ],
+      "id": "outfit-1780724299547",
+      "createdAt": "2026-06-06T05:38:19.547Z",
+      "imageUrl": "/uploads/outfit-1780724299547.svg"
+    },
+    {
+      "title": "为你生成的穿搭",
+      "promptTags": [
+        "通勤",
+        "蓝白",
+        "25度"
+      ],
+      "pieces": [
+        {
+          "name": "奶油色衬衫",
+          "tone": "cream"
+        },
+        {
+          "name": "浅蓝直筒牛仔裤",
+          "tone": "blue"
+        },
+        {
+          "name": "米色单肩包",
+          "tone": "tan"
+        },
+        {
+          "name": "小白鞋",
+          "tone": "gray"
+        },
+        {
+          "name": "珍珠耳环",
+          "tone": "cream"
+        }
+      ],
+      "inspiration": "干净的蓝白色调适合通勤场景，米色下装让整体更柔和，利落但不生硬。",
+      "previewTone": "cream",
+      "likedTones": [
+        "cream",
+        "green",
+        "cream",
+        "blue",
+        "cream"
+      ],
+      "id": "outfit-1780721372506",
+      "createdAt": "2026-06-06T04:49:32.506Z",
+      "imageUrl": "/uploads/outfit-1780721372506.svg"
+    }
+  ]
+}
